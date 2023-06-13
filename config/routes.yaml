@@ -1,5 +1,10 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+home:
+    path: /home
+    controller: App\Controller\MainController::index
+custom:
+    path: /custom
+    controller: App\Controller\MainController::custom
+welcome:
+    path: /welcome/{slug}
+    controller: App\Controller\MainController::welcome
+
